@@ -1,4 +1,4 @@
-package com.ahmedSo.weather.ui.main.currentWeather
+package com.ahmedSo.weather.ui.main.locationWeather
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -16,23 +16,23 @@ import androidx.lifecycle.ViewModelProvider
 import com.ahmedSo.weather.R
 import com.ahmedSo.weather.adapters.WeatherTimeStateAdapter
 import com.ahmedSo.weather.data.remote.responses.LocationForecastResponse
-import com.ahmedSo.weather.databinding.FragmentCurrentWeatherBinding
+import com.ahmedSo.weather.databinding.FragmentLocationWeatherBinding
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.tasks.Task
 
-class CurrentWeatherFragment : Fragment() {
+class LocationWeatherFragment : Fragment() {
 
     private val PERMISSION_LOCATION = 1001
-    private var mViewModel: CurrentWeatherViewModel? = null
-    private var binding: FragmentCurrentWeatherBinding? = null
+    private var mViewModel: LocationWeatherViewModel? = null
+    private var binding: FragmentLocationWeatherBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         binding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_current_weather, container, false)
+            DataBindingUtil.inflate(inflater, R.layout.fragment_location_weather, container, false)
         binding?.lifecycleOwner = this
-        mViewModel = ViewModelProvider(this).get(CurrentWeatherViewModel::class.java)
+        mViewModel = ViewModelProvider(this).get(LocationWeatherViewModel::class.java)
         binding?.viewModel = mViewModel
         lastLocation()
         return binding?.root

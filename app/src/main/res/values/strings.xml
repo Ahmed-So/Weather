@@ -2,7 +2,7 @@
     <string name="app_name">Weather</string>
     <string name="home_fragment_title">@string/app_name</string>
     <string name="home_fragment_search_button_text">Search</string>
-    <string name="home_fragment_current_weather_button_text">Current Weather</string>
+    <string name="home_fragment_current_weather_button_text">Location Weather</string>
 
     <string name="search_fragment_title">Search</string>
     <string name="search_fragment_user_guid">Please write minimum 3 cities and max 7 cities and separate them with comma</string>
@@ -10,7 +10,7 @@
     <string name="search_fragment_search_editText_hint">Enter city name</string>
     <string name="search_fragment_search_button_text">Search</string>
 
-    <string name="current_weather_fragment_title">Current Weather</string>
+    <string name="current_weather_fragment_title">Location Weather</string>
     <string name="current_weather_fragment_turn_location_message">Please turn on location.</string>
     <string name="current_weather_fragment_fetch_location_failed_message">Failed to fetch your location.</string>
 </resources>

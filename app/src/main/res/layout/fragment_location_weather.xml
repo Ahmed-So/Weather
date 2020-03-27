@@ -9,13 +9,13 @@
 
         <variable
             name="viewModel"
-            type="com.ahmedSo.weather.ui.main.currentWeather.CurrentWeatherViewModel" />
+            type="com.ahmedSo.weather.ui.main.locationWeather.LocationWeatherViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.main.currentWeather.CurrentWeatherFragment">
+        tools:context=".ui.main.locationWeather.LocationWeatherFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_current_weather_list"

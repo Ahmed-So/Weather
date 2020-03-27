@@ -1,4 +1,4 @@
-package com.ahmedSo.weather.ui.main.currentWeather
+package com.ahmedSo.weather.ui.main.locationWeather
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,7 +10,7 @@ import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 import timber.log.Timber
 
-class CurrentWeatherViewModel : ViewModel() {
+class LocationWeatherViewModel : ViewModel() {
 
     var latitude: Double? = null
         private set
