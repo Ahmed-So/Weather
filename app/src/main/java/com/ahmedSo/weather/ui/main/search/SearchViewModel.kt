@@ -41,7 +41,7 @@ class SearchViewModel : ViewModel() {
         }
 
     fun checkData(cities: Array<String>): Boolean {
-        return cities.size <= 7 && cities.size >= 3
+        return cities.size in 3..7
     }
 
     fun search(cities: Array<String>) {
